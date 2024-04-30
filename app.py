@@ -28,7 +28,3 @@ def chatgpt():
     bot_resp.message(answer)
 
     return str(bot_resp)
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
