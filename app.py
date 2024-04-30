@@ -6,6 +6,10 @@ from groq_operations import generate_answer
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return "Hello, World!"
+
 
 @app.route('/sms',  methods=['POST'])
 def chatgpt():
